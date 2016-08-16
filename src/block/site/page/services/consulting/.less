@@ -1,0 +1,107 @@
+.consulting-page-content{}
+._scpc__row{
+	@media @media-size-sm{flex-wrap: wrap;}
+}
+._scpc__col-left{
+	width: 63%;
+	@media @media-device{width: 100%}
+	@media @media-size-lg{width: 60%}
+}
+._scpc__col-right{
+	width: 36%;
+	@media @media-device{width: 100%}
+	@media @media-size-lg{width: 40%}
+}
+._scpc__col-ll{
+	width: 25%;
+	@media @media-size-xs{width: 100%; order: 1; text-align: center;}
+	@media @media-size-lg{width: 30%}
+}
+._scpc__col-lr{
+	width: 75%;
+	@media @media-size-xs{width: 100%}
+	@media @media-size-lg{width: 70%}
+}
+._scpc__boss-preview{
+	margin-bottom: 23px;
+	@media @media-size-xs{img{margin: 0 auto;}}
+}
+._scpc__boss-name{
+	font-family: @calibri;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+._scpc__note{
+	margin-bottom: 60px;
+	@media @media-size-xs{margin-bottom: 35px;}
+	@media @media-size-sm-p{margin-bottom: 35px;}
+}
+._scpc__services-panel{
+	@media @media-size-sm{margin-left: auto; margin-right: auto;}
+}
+._scpc__s-more{
+    margin-left: auto;
+    max-width: 415px;
+	@media @media-device{max-width: 100%}
+	@media @media-size-lg{max-width: 375px}
+}
+._scpc__s-more-heading{
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	color: @blue-light;
+	font-family: @calibri-light;
+	letter-spacing: 1px;
+	@media @media-size-xs{text-align: center;}
+}
+._scpc__s-more-row{
+	flex-wrap: wrap;
+	@media @media-size-sm{
+		justify-content: center;
+	}
+}
+._scpc__s-more-cols{
+	width: 50%;
+	@media @media-size-xs-l{width: 33.3333%}
+	@media @media-size-sm-p{width: 33.3333%}
+	@media @media-size-sm-l{width: 20%}
+}
+._scpc__s-more-item{
+	font-size: 14px;
+	line-height: 18px;
+	font-family: @calibri-bold;
+	text-transform: uppercase; 	
+	margin-bottom: 50px;
+	letter-spacing: .8px;
+	@media @media-size-xs{
+		font-size: 12px;
+		line-height: 15px;
+	}
+	@media @media-size-sm-l{
+		font-size: 12px;
+		line-height: 15px;
+	}
+	&.icon{
+		&:before{
+			content: '';
+			display: block;
+			width: 71px;
+			height: 50px;
+			margin-bottom: 17px;
+			background-image: url('@{url-path-img}/services/consulting-more.png');
+			background-repeat: no-repeat;
+		}
+	}
+}
+.myLoop (0);
+@amount: 5; 
+@l-height: 50px;
+.myLoop (@index) when (@index < @amount) {  
+	@child: @index + 1;
+	._scpc__s-more-item.icon-@{child} {
+		&:before{background-position: 0 -(@index * @l-height)}
+  	}
+  	.myLoop(@index + 1); 
+}
