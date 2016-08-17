@@ -21,7 +21,7 @@ if (device.mobile() || device.tablet()) {
 	
 }
 if (device.mobile()) {
-	$('.content-site.second').removeAttr("style");
+	$('.content-site.second').removeAttr("style");	
 	$('._sspc__bg-text').appendTo('._sspc__cols._director ._inner');
 
 } else {

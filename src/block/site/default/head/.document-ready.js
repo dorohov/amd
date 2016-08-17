@@ -17,6 +17,7 @@ $('._sppc__item').hover(
 		$(this).removeClass('active');
 	}
 );
+$('iframe').removeAttr("frameborder");
 $('#getModal').click(function(){
 	$('#modal-enter').modal('hide');
 	setTimeout(function() {$('#modal-pass').modal('show');}, 500)
