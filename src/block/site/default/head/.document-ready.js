@@ -8,6 +8,7 @@ $('.services-dropdown .dropdown-menu a[href="'+url+'"]').parent().addClass('acti
 if(url != "/"){
 	$('<li><a href="/">Главная</a></li>').prependTo($('.navbar-nav'));
 }
+$('.text-block table').addClass('table table-bordered');
 $('._sppc__item').hover(
 	function(){
 		$(this).addClass('active');
@@ -16,10 +17,16 @@ $('._sppc__item').hover(
 		$(this).removeClass('active');
 	}
 );
+$('#getModal').click(function(){
+	$('#modal-enter').modal('hide');
+	setTimeout(function() {$('#modal-pass').modal('show');}, 500)
+	return false;
+});
 $('._apc__slider').owlCarousel({
 	margin: 35,
 	navText: [],
 	nav: true,
+	dots: false,
 	responsive:{
 	   	0:{
 			items:1

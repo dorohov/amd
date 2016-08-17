@@ -105,9 +105,44 @@
 				<h5>Подзаголовок, который выделяет главную мысль абзаца</h5>
 				<div>16 сентября состоялась церемония награждения RUSSIAN DATA CENTER AWARDS 2015 – премия в области цодостроения. Компания «Амдтехнологии» признана лучшей в номинации «Комплексное решение IT + инженерная инфраструктура» за проектирование системы холодоснабжения и автоматизации вычислительного комплекса «Ломоносов» - суперкомпьютера, установленного в Московском государственном университете, разработанного компанией «Т-платформы». </div>				
 				<div>Генеральному директору Соханю Максиму Александровичу был вручен наградной кубок и почётный диплом.</div>
+				<div>
+					<table>
+				      <thead>
+				        <tr>
+				          <th>#</th>
+				          <th>Имя</th>
+				          <th>Фамилия</th>
+				          <th>Пользователь</th>
+				        </tr>
+				      </thead>
+				      <tbody>
+				        <tr>
+				          <td rowspan="2">1</td>
+				          <td>Mark</td>
+				          <td>Otto</td>
+				          <td>@mdo</td>
+				        </tr>
+				        <tr>
+				          <td>Mark</td>
+				          <td>Otto</td>
+				          <td>@TwBootstrap</td>
+				        </tr>
+				        <tr>
+				          <td>2</td>
+				          <td>Jacob</td>
+				          <td>Thornton</td>
+				          <td>@fat</td>
+				        </tr>
+				        <tr>
+				          <td>3</td>
+				          <td colspan="2">Larry the Bird</td>
+				          <td>@twitter</td>
+				        </tr>
+				      </tbody>
+				    </table>
+				</div>
 				<div class="gal-site">
-					<div class="galery-site__item">
-						
+					<div class="galery-site__item">						
 						<a class="fancybox-buttons" data-fancybox-group="button" href="/img/news/item2.jpg" data-title=""><img src="/img/news/slider1.jpg" alt="" /></a>
 					</div>
 					<div class="galery-site__item">
@@ -212,10 +247,34 @@
 						</div>
 						<div class="_me__form-item pass">
 							<input type="password" class="form-control _me__form-control" placeholder="Пароль">
-							<a href="#" class="_me__form-pass">Забыли пароль</a>
+							<a href="#" id="getModal" class="_me__form-pass">Забыли пароль</a>
 						</div>
 						<div  class="_me__form-btn">
 							<button type="button" class="btn-site btn-line btn-white big">Войти</button>
+						</div>
+					</form>			
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+		<div class="modal fade" id="modal-pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content  _me__content">
+			<div class="modal-body _me__body">
+				<div class="_me__block">
+					<div class="_me__heading">
+						<h4 class="modal-title _me__title">Восстановление пароля</h4>
+						<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true"></button>
+					</div>
+					<form class="_me__form" action=""> 
+						<div class="_me__form-item">
+							<input type="email" class="form-control _me__form-control" placeholder="Введите ваш e-mail">
+						</div>
+						<div  class="_me__form-btn">
+							<button type="button" class="btn-site btn-line btn-white big">Восстановить</button>
 						</div>
 					</form>			
 					

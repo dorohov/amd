@@ -2,6 +2,7 @@ var h_window = $(window).height(),
  	w_window = $(window).width(),
 
 	h_navbar = $('.navbar-site').outerHeight(true),//+
+	h_navbar_header = $('.navbar-header').outerHeight(true),//+
 	h_navbar_fixed = $('.navbar-fixed-top').outerHeight(true),
 
 	h_header = $('.header-site').outerHeight(true),
@@ -11,6 +12,7 @@ var h_window = $(window).height(),
 
  	h_resize_map = h_window - h_header - 50,
  	h_resize_xs = h_window;
+	//h_navbar_collapse = h_window - h_navbar_header;//+
 
 if (device.mobile() || device.tablet()) {
 	$('.navbar').addClass('navbar-fixed-top');
@@ -26,4 +28,4 @@ if (device.mobile()) {
 	$('.content-site.second').css("min-height", h_resize);
 }
 
-$("nav.navbar-fixed-top").autoHidingNavbar();
+$("nav.navbar-fixed-top").autoHidingNavbar(); 

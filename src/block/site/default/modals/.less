@@ -58,7 +58,6 @@
 	right: 0;	
 	outline: 0;
 	//opacity: 0.7;
-	background: @b-html-bg;
 }
 // Modal background
 .modal-backdrop {
@@ -97,7 +96,8 @@
 	display: flex;
 	width: 100%;
 	height: 100%;
-	background: @b-body-bg;
+	justify-content: center;
+	align-items: center;
 }
 
 // Measure scrollbar width for padding body during modal show/hide
@@ -110,8 +110,9 @@
 }
 
 /* custom styles*/
+/*modal enter*/
 ._me__content{
-	//background: url("@{url-path-img}/bg/bg-enter.jpg") no-repeat center;
+	background: url("@{url-path-img}/bg/bg-enter.jpg") no-repeat center;
 }
 ._me__body{
 	justify-content: center;
@@ -136,7 +137,6 @@
 		margin-bottom: 25px;
 	}
 }
-._me__form{}
 ._me__form-item{
 	position: relative;
 	margin-bottom: 25px;
@@ -192,8 +192,11 @@
 ._me__form-btn{
 	padding-top: 15px;
 }
+/*modal form*/
+._mf__content{background: @b-html-bg;}
 ._mf__body{
 	overflow: auto;
+	background: @b-body-bg;
 }
 ._mf__block{
 	margin: auto;
@@ -243,12 +246,9 @@
 	margin-top: 40px;
 	@media @media-device{margin-top: 25px;}
 }
-._mv__content{
-	background: none;
-}
-._mv__body{
-	background: none;
-}
+/*modal video*/
+._mv__content{}
+._mv__body{}
 ._mv__block{
 	position: relative;
     padding: 40px;
@@ -269,4 +269,13 @@
 			transform: translate(-50%, 0);
 		}
     }
+}
+/*modal message*/
+._mm__content{}
+._mm__body{}
+._mm__block{
+	background: @b-html-bg;    
+	width: 100%;
+    max-width: 500px;
+    padding: 25px 30px;
 }
