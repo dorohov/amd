@@ -311,13 +311,14 @@ ol{
 		}
 		.dropdown-menu{
 			opacity: 1;
-			right: inherit;
+			z-index: 1;
+			//right: inherit;
 		}
 
 	}
 	._btn{
 		border: 1px solid;
-		transition: @transition-site;
+		//transition: @transition-site;
 		font-family: @calibri;
 		font-size: 14px;
 		line-height: 31px;
@@ -328,17 +329,18 @@ ol{
 		text-transform: uppercase;
 		.caret{
 			margin-right: 14px;
-			transition: @transition-site;
+			//transition: @transition-site;
 		}
 		@media @media-size-xs{font-size: 13px;}
 	}
 	.dropdown-menu{
 		transition: all 0.3s linear;
 		display: block;
-		border:0px;
-		min-width: 0;    
+		border: 0px;
+		min-width: 0; 
+		z-index: -1;   
 		overflow: hidden;
-		right: 100%;
+		//right: 100%;
 		opacity: 0;
 		border-radius: 0;
 		margin: 0px;

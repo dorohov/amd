@@ -302,7 +302,6 @@
 	position: absolute;
 	top: 5px;
 	right: 0px;
-	@media @media-size-xs{top: 50%; transform: translateY(-50%);}
 }
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
@@ -344,6 +343,9 @@
 }
 ._me__heading{
 	position: relative;
+	.modal-btn-close{
+		@media @media-size-xs{top: 50%; transform: translateY(-50%);}
+	}
 }
 ._me__title{
 	padding-right: 60px;
@@ -368,6 +370,7 @@
 	font-size: 24px;
 	line-height: 24px;
 	color: #9f9f9f;
+	border-radius: 0;
 	&::-webkit-input-placeholder {
 		font-size: 24px;
 		line-height: 24px;
@@ -469,7 +472,7 @@
     padding: 40px;
     width: 500px;
     height: 350px;
-    margin: auto;
+    //margin: auto;
 	@media @media-size-xs{
 		padding: 50px 20px;
 	}
@@ -480,8 +483,8 @@
     .modal-btn-close{
 		@media @media-size-xs{
 			top: 0;
-			left: 50%;
-			transform: translate(-50%, 0);
+			left: 50%;    
+			transform: translateX(-50%);
 		}
     }
 }
@@ -899,6 +902,7 @@
 			overflow: hidden;
 			bottom: 30px;
 		    justify-content: flex-start;
+		    @media @media-device{display: block;}
 		}
 		.news-item__heading {
 			margin-bottom: 20px;
@@ -1494,6 +1498,18 @@
 	@media @media-size-sm{   
 		transform: translate(0%,-70%);
 	}
+
+
+		width: 110px;
+		height: 110px;
+		@media @media-size-xs{
+		width: 55px;
+		height: 55px;
+		}
+		@media @media-size-sm{
+			width: 80px;
+			height: 80px;
+		}
 }
 ._apc__video-note{
 	font-family: @calibri;  
@@ -1548,6 +1564,7 @@
 		line-height: 70px;
 		margin-bottom: 20px;
 		display: block;
+		padding: 5px 0; 
 	}
 	._apc__slider-preview{
 		height: 70px;
@@ -1977,13 +1994,15 @@
 	width: 100%;
 	height: 600px;
 	background-repeat: no-repeat;
-	background-position: top center;
+	//background-position: top center;
+	background-position: center;  
+	background-size: cover;
 	position: relative;
 	z-index: 1;
 	@media @media-size-xs-p{height: 200px; }
 	@media @media-size-xs-l{height: 150px;}
 	@media @media-size-sm{height: 300px;}
-	@media @media-device{background-position: center; background-size: cover}
+	@media @media-size-lg{height: 300px;}
 	&:before{
 		content: '';
 		position: absolute;
@@ -2045,8 +2064,8 @@
 	background: url("@{url-path-img}/bg/bg-video.jpg") no-repeat center;
 	background-size: cover;
 	transition: .5s filter linear;
-	opacity: .5;
-	filter: blur(5px);
+	opacity: .6;
+	filter: blur(3px);
 }
 .consulting-page-content{}
 ._scpc__row{
@@ -2184,6 +2203,7 @@
 	}
 }
 ._spc__item{
+	display: block;
 	width: 25%;
 	color: @white;
 	position: relative;

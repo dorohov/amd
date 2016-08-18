@@ -87,7 +87,6 @@
 	position: absolute;
 	top: 5px;
 	right: 0px;
-	@media @media-size-xs{top: 50%; transform: translateY(-50%);}
 }
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
@@ -129,6 +128,9 @@
 }
 ._me__heading{
 	position: relative;
+	.modal-btn-close{
+		@media @media-size-xs{top: 50%; transform: translateY(-50%);}
+	}
 }
 ._me__title{
 	padding-right: 60px;
@@ -153,6 +155,7 @@
 	font-size: 24px;
 	line-height: 24px;
 	color: #9f9f9f;
+	border-radius: 0;
 	&::-webkit-input-placeholder {
 		font-size: 24px;
 		line-height: 24px;
@@ -254,7 +257,7 @@
     padding: 40px;
     width: 500px;
     height: 350px;
-    margin: auto;
+    //margin: auto;
 	@media @media-size-xs{
 		padding: 50px 20px;
 	}
@@ -265,8 +268,8 @@
     .modal-btn-close{
 		@media @media-size-xs{
 			top: 0;
-			left: 50%;
-			transform: translate(-50%, 0);
+			left: 50%;    
+			transform: translateX(-50%);
 		}
     }
 }
