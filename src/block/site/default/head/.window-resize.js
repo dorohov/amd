@@ -16,13 +16,13 @@ var h_window = $(window).height(),
 
 if (device.mobile() || device.tablet()) {
 	$('.navbar').addClass('navbar-fixed-top');
+	$('.director-text').appendTo('.director-block ._inner');
 	//$('body').css("padding-top", h_navbar_fixed);
 } else {	
 	
 }
 if (device.mobile()) {
 	$('.content-site.second').removeAttr("style");	
-	$('._sspc__bg-text').appendTo('._sspc__cols._director ._inner');
 
 } else {
 	$('.content-site.second').css("min-height", h_resize);

@@ -10,6 +10,23 @@
 	background: url("@{url-path-img}/bg/bg-video.jpg") no-repeat center;
 	background-size: cover;
 	transition: .5s filter linear;
-	opacity: .6;
-	filter: blur(3px);
+	opacity: .5;
+	filter: blur(2px);
+	@media @media-size-xs{display: none}
+}
+.bg-video-xs{	
+	@media @media-size-xs{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: auto;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: 1;
+		background: url("@{url-path-img}/bg/bg-video1.jpg") no-repeat center;
+		background-size: cover;	
+		opacity: .5;	
+	}
+	@media @media-notsmart{display: none;}
 }

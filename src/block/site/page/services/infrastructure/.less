@@ -1,4 +1,61 @@
 .infrastructure-page-content{}
 ._sipc__block{
+	position: relative;
+	img{
+		width: 800px;
+	}
+}
+._sipc__content{margin-bottom: 30px;}
+._sipc__note{
+	position: absolute;
+	right: 0px;
+    top: 0;
+    width: 500px;
+    div, p{
+    	margin-bottom: 10px;
+    }
+}
+._sipc__notsmart{
+	@media @media-size-xs{display: none;}
+}
+._sipc__smart{
+	@media @media-notsmart{display: none;}
+}
+._sipc__panel-group{
+	background: fadeout(@black, 70%);
 	margin-bottom: 30px;
+}
+._sipc__panel-heading{
+	font-family: @calibri-bold;
+	text-transform: uppercase;
+	display: block;
+	border-bottom: 1px solid @blue;
+	padding: 13px 35px 10px 15px;
+	position: relative;
+	line-height: 18px;
+	&:before{
+		font-family: @icon;
+		position: absolute;
+		content: @icon-down;
+		top: 50%;
+		right: 7px;
+		font-size: 16px;
+	}
+	&[aria-expanded="true"]{
+		&:before{
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+	&[aria-expanded="false"]{
+		&:before{transform: translateY(-50%) rotate(0deg);}
+	}
+}
+._sipc__panel{
+	&:last-child{
+		._sipc__panel-collapse{border-bottom: 0;}
+	}
+}
+._sipc__panel-collapse{
+	padding: 10px 15px;
+	border-bottom: 1px solid @blue;
 }

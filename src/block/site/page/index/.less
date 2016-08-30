@@ -3,7 +3,7 @@
 	top: 50%;
 	z-index: 10;
     left: 7%;
-    width: 1020px;
+    width: 920px;
     transform: translateY(-50%);
 	@media @media-size-xs{left: 20px; width: auto; right: 20px; text-align: center;}
 	@media @media-size-sm{left: 2.5%; width: 720px;}
@@ -15,9 +15,12 @@
 	font-size: 75px;
 	line-height: 90px;
 	margin-bottom: 30px;
-	//font-family: @calibri-light; 
+	font-family: @din; 
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
 	//font-family: @calibri-bold;
-	font-family: @calibri;
+	//font-family: @calibri;
 	@media @media-size-xs{
 		font-size: 25px;
 		line-height: 33px;
@@ -37,6 +40,21 @@
 		font-size: 69px;
 		line-height: 80px;
     	margin-bottom: 25px;
+	}
+}
+#index-svg{
+	@media @media-device{display: none;}
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	path{
+		fill: fadeout(@white, 100%);
+		transition: 0.5s all linear;
+		&:hover{
+			fill: fadeout(@white, 80%);
+			cursor: pointer;
+		}
 	}
 }
 
