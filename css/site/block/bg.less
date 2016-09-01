@@ -35,7 +35,7 @@
 .bg-consulting{
 	background-image: url('@{url-path-img}/bg/bg-consulting.png');
 	background-repeat: no-repeat;
-	background-position: 92% bottom;
+	background-position: right 100%;
 	margin-bottom: 0px;
 	padding-bottom: 50px;
 	min-height: 850px!important;
@@ -56,10 +56,18 @@
 	}
 	.director-block{
 		._inner{
+			@media @media-size-xs{
+				background-position: right bottom;
+				background-size: auto 100%;
+			}
+			@media @media-size-sm{
+				background-size: 100% auto;
+    			background-position: bottom right;
+			}
 			@media @media-device{
 				background-image: url('@{url-path-img}/bg/bg-consulting.png');
 				background-repeat: no-repeat;
-				background-size: 190px auto;
+				//background-size: 190px auto;
 			}
 		}
 	}
