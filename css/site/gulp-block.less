@@ -1814,11 +1814,13 @@
 	z-index: 2;
 	path{
 		fill: fadeout(@white, 100%);
-		transition: 0.3s all linear;
-		/*&:hover{
-			fill: fadeout(@white, 80%);
+		transition: .999s all linear;
+		
+		&:hover{
+			fill: fadeout(@white, 20%);
 			cursor: pointer;
-		}*/
+			transition: .2s all linear;
+		}
 	}
 	line{
 		stroke: fadeout(@white, 95%);
