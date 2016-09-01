@@ -74,3 +74,11 @@ $('.fancybox-buttons').fancybox({
 		this.title = this.title;
 	}
 });
+$('#index-svg path').hover(
+	function(){
+		$(this).addClass('active');
+	},
+	function(){
+		$(this).removeClass('active');
+	}
+);

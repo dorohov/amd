@@ -2180,6 +2180,17 @@
 	}
 	@media @media-notsmart{display: none;}
 }
+.element-with-video-bg{
+	position: fixed!important;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	width: 100%;
+	left: 0;
+	background: url("@{url-path-img}/bg/bg-video.jpg") no-repeat center;
+	opacity: .6;
+	filter: blur(2px);
+}
 .consulting-page-content{}
 ._scpc__row{
 	@media @media-size-sm{flex-wrap: wrap;}
@@ -2317,10 +2328,10 @@
     }
 }
 ._sipc__notsmart{
-	@media @media-size-xs{display: none;}
+	@media @media-device{display: none;}
 }
 ._sipc__smart{
-	@media @media-notsmart{display: none;}
+	@media @media-screen{display: none;}
 }
 ._sipc__panel-group{
 	background: fadeout(@black, 70%);
