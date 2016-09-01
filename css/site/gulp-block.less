@@ -171,12 +171,12 @@
 	@media @media-device{display: none;}
 }
 ._fs__cols-navbar3{
-	width: 18%;
+	width: 17%;
 	@media @media-device{display: none;}
 }
 ._fs__cols-btn{
 	margin-top: 10px;
-	width: 16%;
+	width: 17%;
 	@media @media-device{display: none;}
 }
 ._fs__logotip{
@@ -2310,11 +2310,16 @@
   	.myLoop(@index + 1); 
 }
 
-.infrastructure-page-content{}
+.infrastructure-page-content{
+	@media @media-size-xl{margin-top: 15px;}
+}
 ._sipc__block{
 	position: relative;
 	img{
-		width: 800px;
+		width: 650px;
+		@media @media-size-lg{width: 700px}
+		@media @media-size-xl{width: 740px}
+		@media @media-size-xxl{width: 950px}
 	}
 }
 ._sipc__content{margin-bottom: 30px;}
