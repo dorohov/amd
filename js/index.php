@@ -1,108 +1,58 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="ru-RU"> 
-	<head>
-		<meta charset="utf-8">	
-<title>www.amd-tech.ru</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Инженерная инфраструктура");
+?>
 
-<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
-<link type="image/x-icon" href="/favicon.ico" rel="icon" />
 
-<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
+<div class="body-inner second">
 
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+<?
 
-<link href="/css/site.css" rel="stylesheet"> 
-	</head>
-	<body>	
-		<div class="_czr__loader active page-loader active" >
-	<div class="_czr__preloader-inner" >
-		<div class="_czr__preloader-process-container process-container" >
-			<div class="_czr__preloader-process-level process-level" ></div>
-		</div>
-		<div class="_czr__preloader-center" >
-			<div class="_azbn__preloader-percent" >75</div>
-			<a class="close-loader" href="#not-lazyload" ><img src="/img/default/preloader.gif" alt=""></a>
-		</div>
-	</div>
-</div>
-		<div class="body-inner second">
+$APPLICATION->IncludeComponent(
+	'bitrix:main.include',
+	'',
+	Array(
+		'AREA_FILE_SHOW' => 'file',
+		'PATH' => SITE_TEMPLATE_PATH.'/tpl/_/preloader/index.php',
+		'EDIT_TEMPLATE' => '',
+	),
+false
+);
 
-			<nav class="navbar navbar-site navbar-second">
+?>
 
-	<div class="navbar-site__row row">
+<?
 
-		<div class="navbar-header cols">
-			<div class="row navbar-header_row ">
-				<div class="cols navbar-brand__cols">
-					<a class="navbar-brand" href="/">
-						<img src="/img/default/logotip.png" alt="">
-					</a>
-				</div>	
-				<div class="cols navbar-hamburger__cols">
-					<div class="navbar__lang-bar lang-bar">
-						<a href="#" class="active">рус</a> / 
-						<a href="#">eng</a>
-					</div>
-					<a href="#" class="hamburger hamburger--emphatic" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
-						<div class="hamburger-box">
-							<div class="hamburger-inner"></div>
-						</div>
-					</a>
-						
-		        </div>
-	        </div>
-		</div>
+$APPLICATION->IncludeComponent(
+	'bitrix:main.include',
+	'',
+	Array(
+		'AREA_FILE_SHOW' => 'file',
+		'PATH' => SITE_TEMPLATE_PATH.'/tpl/_/navbar/second.php',
+		'EDIT_TEMPLATE' => '',
+	),
+false
+);
 
-		<div class="collapse navbar-collapse cols" id="bs-navbar-collapse">
-			<div class="row navbar-collapse-row">
-				<ul class="nav navbar-nav cols">
-					<li><a href="/about.html">О компании</a></li>
-					<li><a href="/services.html">Услуги</a></li>
-					<li><a href="/clients.html">Клиенты</a></li>
-					<li><a href="/pressroom.html">Пресс-центр</a></li>
-					<li><a href="/contacts.html">Контакты</a></li>	
-				</ul>
-				<div class="navbar-contacts cols">
-					<div class="row">
-						<div class="cols"><a href="tel:+74959844105">+7 (495) 984-41-05</a></div>
-						<div class="cols"><a href="mailto:info@amd-tech.ru">info@amd-tech.ru</a></div>
-					</div>
-				</div>
-				<div class="navbar-btn-enter cols">
-					
-					<button type="button" data-toggle="modal" data-target="#modal-enter" class="btn-site btn-line btn-white btn-enter">вход <span>в servicedesk</span></button>	
-					
-					<div class="lang-bar navbar-lang-bar">
-						<a href="#" class="active">рус</a> / <a href="#">en</a>
-					</div>				
-				</div>
-			</div>
-		</div>
+?>
 
-	</div>
-
-</nav>
-
-			<div class="infrastructure-page-content content-site second">	
+<div class="infrastructure-page-content content-site " style="min-height: auto !important;" >	
 	<div class="container"> 
 		<h1 class="heading-site">Инженерная инфраструктура для технологичных помещений</h1>	
+	</div>
+</div>
+
+
+
+<div class="infrastructure-page-content content-site second" style="background-image:url(<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/texture.png);background-position:center center; background-repeat:repeat;" >	
+	<div class="container"  > 
+		
+<?
+include('svg.azbn.php');
+?>
+		
+		
+		<!--
 		<div class="_sipc__notsmart">
 			<div class="tabs-site">
 				<ul>				
@@ -117,8 +67,8 @@
 			</div> 
 			<div class="tab-content _sipc__content">
 				<div class="tab-pane active" id="sipc-item1">
-					<div class="_sipc__block">
-						<img src="/img/infrastructure/item1.png" alt="">
+					<div class="_sipc__block azbn-infrast-block">
+						<img src="<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/item1.png" alt="">
 						<div class="_sipc__note">
 							<h4>Система холодоснабжения</h4>
 							<div>Бесперебойная работа высокотехнологичных объектов напрямую зависит от качеств системы кондиционирования и вентиляции. Мы сконцентрировали свой опыт в разработке и применении прецизионного оборудования для обеспечения высокой эффективности и надежности круглогодичного поддержания заданных параметров микроклимата в помещении.</div>
@@ -127,8 +77,8 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="sipc-item2">
-					<div class="_sipc__block">
-						<img src="/img/infrastructure/item2.png" alt="">
+					<div class="_sipc__block azbn-infrast-block">
+						<img src="<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/item2.png" alt="">
 						<div class="_sipc__note">
 							<h4>Система электроснабжения</h4>
 							<div>Непрерывность работы современного высокотехнологичного оборудования зависит от слаженной работы многих систем, нуждающихся в бесперебойном электропитании. </div>
@@ -138,8 +88,8 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="sipc-item3">
-					<div class="_sipc__block">
-						<img src="/img/infrastructure/item3.png" alt="">
+					<div class="_sipc__block azbn-infrast-block">
+						<img src="<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/item3.png" alt="">
 						<div class="_sipc__note">
 							<h4>Система резервного гарантированного электроснабжения</h4>
 							<div>Для предотвращения остановки работы оборудования устанавливается резервный источник питания, чаще всего дизель-генераторная установка (ДГУ). В случае аварийной ситуации резервный дизель-генератор быстро запускается в автоматическом режиме, что позволяет сократить, а то и вовсе исключить, финансовые потери. При проектировании системы резервного электроснабжения важно правильно рассчитать мощность ДГУ для нормального функционирования объекта в целом.</div>
@@ -148,8 +98,8 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="sipc-item4">
-					<div class="_sipc__block">
-						<img src="/img/infrastructure/item4.png" alt="">
+					<div class="_sipc__block azbn-infrast-block">
+						<img src="<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/item4.png" alt="">
 						<div class="_sipc__note">
 							<h4>Система автоматизации и диспетчеризации</h4>
 							<div>Современный высокотехнологичный объект представляет собой комплекс сложных инженерных систем. Внезапные неполадки и сбои в работе могут негативно отразиться на работе объекта в целом, и для быстрого и эффективного реагирования на любые внештатные ситуации приходят на помощь системы диспетчеризации и автоматизации.</div>
@@ -158,8 +108,8 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="sipc-item5">
-					<div class="_sipc__block">
-						<img src="/img/infrastructure/item5.png" alt="">
+					<div class="_sipc__block azbn-infrast-block">
+						<img src="<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/item5.png" alt="">
 						<div class="_sipc__note">
 							<h4>Система газового пожаротушения</h4>
 							<div>Безопасность объекта и непрерывная работа всех инженерных систем – первоочередная задача. Любое задымление может остановить работу объекта, что приведет к сбою или отказу работы оборудования. Чтобы не произошло подобного казуса необходимо заранее позаботиться о пожарной безопасности своего объекта.</div>
@@ -168,8 +118,8 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="sipc-item6">
-					<div class="_sipc__block">
-						<img src="/img/infrastructure/item6.png" alt="">
+					<div class="_sipc__block azbn-infrast-block">
+						<img src="<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/item6.png" alt="">
 						<div class="_sipc__note">
 							<h4>Система контроля доступа, охранной сигнализации и видеонаблюдения</h4>
 							<div>Каждый объект должен быть максимально защищен от постороннего проникновения. Современные технологии позволяют устанавливать передовые технологии систем контроля доступа, сигнализации и видеонаблюдения.</div>
@@ -179,8 +129,8 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="sipc-item7">
-					<div class="_sipc__block">
-						<img src="/img/infrastructure/item7.png" alt="">
+					<div class="_sipc__block azbn-infrast-block">
+						<img src="<?=SITE_TEMPLATE_PATH;?>/img/infrastructure/item7.png" alt="">
 						<div class="_sipc__note">
 							<h4>Фальшпол</h4>
 							<div>Для комфортной разводки инженерных систем и расположения большого количества кабелей используется поднятый пол. Фальшпол – прочное, удобное покрытие, придает эстетичный вид на объекте.</div>
@@ -257,154 +207,80 @@
 				</div>
 			</div>
 		</div>
+		-->
+		
+	</div>
+</div>
+
+
+
+<div class="infrastructure-page-content content-site " style="min-height: auto !important;" >	
+	<div class="container"  > 
+		
 		<div class="dropdown services-dropdown">
 			<a data-toggle="dropdown" class="_btn" href="#"><span class="caret"></span> Инженерная инфраструктура</a>
 			<div class="dropdown-menu" role="menu">
 				<ul class="_inner">
-					<li><a href="/infrastructure.html">Инженерная инфраструктура</a></li>
-					<li><a href="/project.html">Проект под ключ</a></li>
-					<li><a href="/service.html">Сервис</a></li>
-					<li><a href="/consulting.html">Инжиниринговый консалтинг</a></li>
+					<li><a href="/services/infrastructure/">Инженерная инфраструктура</a></li>
+					<li><a href="/services/project/">Проект под ключ</a></li>
+					<li><a href="/services/service/">Сервис</a></li>
+					<li><a href="/services/consulting/">Инжиниринговый консалтинг</a></li>
 				</ul>
 			</div>
 		</div>	
 	</div>
-</div>  
-
-		</div>
-		
-		<footer class="footer-site second">
-	<div class="footer-inner">
-		<div class="container"> 
-			<div class="_fs__navbar-block">
-				<div class="row _fs__navbar-row">
-					<div class=" cols _fs__cols-info">
-						<div class="_fs__logotip"><a href="/"><img src="/img/default/logotip.png" alt=""></a></div>
-						<div class="_fs__address fs__icon">г. Москва, Краснобогатырская, д. 89, стр. 1</div>
-						<div class="_fs__tel fs__icon"><a href="tel:+74959844105">+7 (495) 984-41-05</a></div>
-						<div class="_fs__mailto fs__icon"><a href="mailto:info@amd-tech.ru">info@amd-tech.ru</a></div>
-					</div>
-					<div class=" cols _fs__cols-navbar1">
-						<ul class="_fs__navbar">
-							<li class="_heading"><a href="/services.html">Услуги</a></li>
-							<li><a href="/infrastructure.html">Инженерная инфраструктура</a></li>
-							<li><a href="/service.html">Сервис</a></li>
-							<li><a href="/project.html">Проект под ключ</a></li>
-							<li><a href="/consulting.html">Инжиниринговый консалтинг</a></li>
-						</ul>
-					</div>
-					<div class=" cols _fs__cols-navbar2">
-						<ul class="_fs__navbar">
-							<li class="_heading">Информация</li>
-							<li><a href="/about.html">О компании</a></li>
-							<li><a href="/partners.html">Партнеры</a></li>
-							<li><a href="/clients.html">Клиенты</a></li>
-							<li><a href="/contacts.html">Контакты</a></li>
-						</ul>
-					</div>
-					<div class=" cols _fs__cols-navbar3">
-						<ul class="_fs__navbar">
-							<li class="_heading"><a href="/pressroom.html">Пресс-центр</a></li>
-							<li><a href="#">Новости компании</a></li>
-							<li><a href="#">Публикации</a></li>
-							<li><a href="#">Брошюры</a></li>
-						</ul>
-					</div>
-					<div class=" cols _fs__cols-btn">
-						<button type="button" data-toggle="modal" data-target="#modal-enter" class="btn-site btn-line btn-blue-bright btn-enter">вход <span>в servicedesk</span></button> 
-					</div>
-				</div>
-			</div>
-			<div class="_fs__row row">
-				
-				<div class="_fs__copyright cols">&copy; 2010-2016. «АМДтехнологии». Все права защищены. </div>				
-				<div class="_fs__dorohovdesign cols">
-					<div class="row">
-						<div class="cols">
-							<a href="http://www.dorohovdesign.ru/" target="_blank">Создание сайта</a>
-						</div>
-						<div class="cols">
-							<a href="http://www.dorohovdesign.ru/" target="_blank"><img src="/img/default/dorohovdesign-blue.png" alt="" ></a>
-						</div>
-					</div>				
-				</div>
-			</div>
-		</div>
-	</div>
-</footer> 
-
-		<div class="modal fade" id="modal-enter" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content  _me__content">
-			<div class="modal-body _me__body">
-				<div class="_me__block">
-					<div class="_me__heading">
-						<h4 class="modal-title _me__title">Вход в ServiceDesk</h4>
-						<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true"></button>
-					</div>
-					<form class="_me__form" action="#"> 
-						<div class="_me__form-item">
-							<input type="text" class="form-control _me__form-control" placeholder="Логин">
-						</div>
-						<div class="_me__form-item pass">
-							<input type="password" class="form-control _me__form-control" placeholder="Пароль">
-							<a href="#" id="getModal" class="_me__form-pass">Забыли пароль</a>
-						</div>
-						<div  class="_me__form-btn">
-							<button type="button" class="btn-site btn-line btn-white big">Войти</button>
-						</div>
-					</form>			
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-		
-		<div class="modal fade" id="modal-pass" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content  _me__content">
-			<div class="modal-body _me__body">
-				<div class="_me__block">
-					<div class="_me__heading">
-						<h4 class="modal-title _me__title">Восстановление пароля</h4>
-						<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true"></button>
-					</div>
-					<form class="_me__form" action="#"> 
-						<div class="_me__form-item">
-							<input type="email" class="form-control _me__form-control" placeholder="Введите ваш e-mail">
-						</div>
-						<div  class="_me__form-btn">
-							<button type="button" class="btn-site btn-line btn-white big">Восстановить</button>
-						</div>
-					</form>			
-					
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 
-<link rel="stylesheet" type="text/css" href="/plugins/fancybox/source/jquery.fancybox.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="/plugins/fancybox/source/helpers/jquery.fancybox-buttons.css" />
+</div>
 
-<script src="/js/jquery.min.js" ></script>
+<?
 
-<script src="/js/bootstrap.min.js" ></script>
-<script src="/js/jquery.bootstrap-autohidingnavbar.min.js" ></script>
-<script src="/js/device.min.js" ></script>
-<script src="/js/moment/moment.min.js" ></script>
-<script src="/plugins/owl.carousel/owl.carousel.min.js"></script> 
-<script src="/js/document-ready.js" ></script>
-		
-<script src="/plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.min.js"></script>
-<script src="/plugins/fancybox/source/jquery.fancybox.min.js"></script>
-<script src="/plugins/fancybox/source/helpers/jquery.fancybox-buttons.min.js"></script>
-	</body>
-</html>
+$APPLICATION->IncludeComponent(
+	'bitrix:main.include',
+	'',
+	Array(
+		'AREA_FILE_SHOW' => 'file',
+		'PATH' => SITE_TEMPLATE_PATH.'/tpl/_/footer/second.php',
+		'EDIT_TEMPLATE' => '',
+	),
+false
+);
+
+?>
+
+
+<?
+/*
+$APPLICATION->IncludeComponent(
+	'azbn:footer.second',
+	'',
+	array(
+		//'AREA_FILE_SHOW' => 'page',
+		//'PATH' => '/bitrix/templates/azbnbitrixtheme/components/footer/second.php'
+		//'AREA_FILE_SUFFIX' => 'headerinc',
+		//'AREA_FILE_RECURSIVE' => 'Y',
+		//'EDIT_MODE' => 'html',
+		//'EDIT_TEMPLATE' => 'second_footer.php',
+	),
+	false
+);
+*/
+?>
+
+<?
+/*
+$APPLICATION->IncludeComponent(
+	'bitrix:main.include',
+	'',
+	Array(
+		'AREA_FILE_SHOW' => 'file',
+		'PATH' => SITE_TEMPLATE_PATH.'/tpl/_/footer/second.php',
+		'EDIT_TEMPLATE' => '',
+	),
+false
+);
+*/
+?>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
