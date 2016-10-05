@@ -2347,6 +2347,9 @@
 .infrastructure-page-content{
 	@media @media-size-xl{margin-top: 15px;}
 }
+.infrastructure-svg-block{
+	@media @media-device{margin-top: 0}
+}
 ._sipc__block{
 	position: relative;
 	img{
@@ -2410,6 +2413,225 @@
 	padding: 10px 15px;
 	border-bottom: 1px solid @blue;
 }
+
+.azbn-infra-block {
+	@media @media-notsmart{margin:30px 0 0;}
+}
+
+.clearboth {
+	clear:both;
+}
+//azbn-svg
+.azbn-svg-cont {
+	max-width:991px;
+	max-height:684px;
+	width:100%;
+	margin:0 auto 0 0;
+}
+@media (max-width: 1599px) {
+	.azbn-svg-cont {
+		max-width:65%;
+	}
+}
+@media (max-width: 991px) {
+	.azbn-svg-cont {
+		max-width:100%;
+		margin:0 auto;
+	}
+}
+
+.azbn-svg-cont svg#azbn-svg {
+	margin-top:-40px;
+}
+
+.azbn-svg-cont svg#azbn-svg .theme-block .black-area {
+	opacity:0;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block .theme-block-btn {
+	opacity:0;
+	overflow:visible;
+	pointer-events: visible;
+	cursor:pointer;
+	transition:all 0.4s ease;
+}
+
+.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
+	//opacity:0;
+	pointer-events: none;
+	overflow:visible;
+	fill:#ffffff;
+	font-size:14px;
+	font-family: @calibri;
+	text-align: left;
+	color:#ffffff;
+	position:relative;
+	transform-origin:0 0;
+	transform:scale(0);
+	transition-delay:0s;
+	transition:all 0.4s ease;
+}
+@media (max-width: 1599px) {
+	.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
+		display:none;
+	}
+}
+
+
+.azbn-svg-cont svg#azbn-svg .theme-block .desc-line {
+	stroke: #82b9d4;
+	stroke-width: 2px;
+	transform-origin:0 0;
+	transform:scale(0);
+	transition-delay:0s;
+	transition:all 0.4s ease;
+}
+@media (max-width: 1599px) {
+	.azbn-svg-cont svg#azbn-svg .theme-block .desc-line {
+		display:none;
+	}
+}
+
+.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .cont {
+	background-color:rgba(0, 0, 0, 0.65);
+	padding: 20px 16px;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .color-stick {
+	content:'';
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:2px;
+	height:0px;
+	background-color:#82b9d4;
+	transition-delay:0.7s;
+	transition:all 0.4s ease;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .title {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform:uppercase;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .desc {
+	font-size: 20px;
+	line-height:1.25em;
+	margin-top:10px;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-line {
+	transform:scale(1);
+	//opacity:1;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont {
+	transform:scale(1);
+	//opacity:1;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont .color-stick {
+	/*height:175px;*/
+	min-height:175px;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont .cont {
+	opacity:1;
+}
+
+.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .theme-block-btn {
+	opacity:1;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block .colored-border {
+	opacity:0;
+	pointer-events: none;
+	display:inline;
+	transition:all 0.4s ease;
+}
+.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .colored-border {
+	opacity:0.53;
+}
+
+.azbn-service-list {
+	float:right;
+	position:relative;
+	transition:all 0.4s ease;
+	@media @media-device{
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.azbn-service-list {
+		min-height: 620px;
+	}
+}
+@media (max-width: 991px) {
+	.azbn-service-list {
+		float:inherit;
+	}
+}
+
+.azbn-service-list ul {
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:0;
+	top:0;
+	transition:all 0.4s ease;
+}
+@media (max-width: 991px) {
+	.azbn-service-list ul {
+		position:relative;
+	}
+}
+
+
+.azbn-service-list ul li {
+	margin: 0 0 12px;
+	padding:0;
+	display:block;
+	text-align: right;
+}
+@media (max-width: 991px) {
+	.azbn-service-list ul li {
+		text-align: left;
+	}
+}
+
+
+.azbn-service-list ul li a {	
+	font-family: @calibri;
+	color: #8cc7e2;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.7px;
+	line-height: 19px;
+	text-transform:uppercase;
+	display:inline-block;
+	padding: 2px 14px;
+	border-radius: 28px;
+	border:1px transparent solid;
+	transition:all 0.4s ease;
+	@media @media-notsmart{white-space: nowrap;}
+}
+@media (max-width: 1599px) {
+	.azbn-service-list ul li a {
+		font-size: 12px;
+	}
+}
+
+.azbn-service-list ul li.active a {
+	color: #ffffff;
+	border:1px #ffffff solid;
+}
+
+.azbn-service-list ul li .desc {
+	font-size: 12px;
+	padding-top:15px;
+	@media @media-device{
+		font-size: 16px;
+	}
+}
+@media (min-width: 1599px) {
+	.azbn-service-list ul li .desc {
+		display:none;
+	}
+}
+
 .services-page-content{
 	width: 100%;
 	height: 100%;
