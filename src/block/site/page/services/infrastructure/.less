@@ -110,7 +110,7 @@
 }
 
 .azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
-	//opacity:0;
+	opacity:0;
 	pointer-events: none;
 	overflow:visible;
 	fill:#ffffff;
@@ -120,7 +120,7 @@
 	color:#ffffff;
 	position:relative;
 	transform-origin:0 0;
-	transform:scale(0);
+	//transform:scale(0);
 	transition-delay:0s;
 	transition:all 0.4s ease;
 }
@@ -135,9 +135,10 @@
 	stroke: #82b9d4;
 	stroke-width: 2px;
 	transform-origin:0 0;
-	transform:scale(0);
+	//transform:scale(0);
 	transition-delay:0s;
 	transition:all 0.4s ease;
+	opacity:0;
 }
 @media (max-width: 1599px) {
 	.azbn-svg-cont svg#azbn-svg .theme-block .desc-line {
@@ -172,12 +173,12 @@
 	margin-top:10px;
 }
 .azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-line {
-	transform:scale(1);
-	//opacity:1;
+	//transform:scale(1);
+	opacity:1;
 }
 .azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont {
-	transform:scale(1);
-	//opacity:1;
+	//transform:scale(1);
+	opacity:1;
 }
 .azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont .color-stick {
 	/*height:175px;*/
@@ -261,6 +262,9 @@
 	border:1px transparent solid;
 	transition:all 0.4s ease;
 	@media @media-notsmart{white-space: nowrap;}
+}
+.azbn-service-list ul li a:hover {
+	color: #ffffff;
 }
 @media (max-width: 1599px) {
 	.azbn-service-list ul li a {
