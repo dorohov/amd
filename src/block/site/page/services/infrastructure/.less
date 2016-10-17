@@ -96,6 +96,11 @@
 
 .azbn-svg-cont svg#azbn-svg {
 	margin-top:-40px;
+	
+	.msie & {
+		width:991px;
+		height:684px;
+	}
 }
 
 .azbn-svg-cont svg#azbn-svg .theme-block .black-area {
@@ -107,6 +112,10 @@
 	pointer-events: visible;
 	cursor:pointer;
 	transition:all 0.4s ease;
+}
+
+.msie .azbn-svg-cont svg#azbn-svg .theme-block line {
+	display:none;
 }
 
 .azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
@@ -123,6 +132,9 @@
 	//transform:scale(0);
 	transition-delay:0s;
 	transition:all 0.4s ease;
+}
+.msie .azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
+	/*display:none;*/
 }
 @media (max-width: 1599px) {
 	.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
@@ -283,9 +295,13 @@
 	@media @media-device{
 		font-size: 16px;
 	}
+	
+	.msie & {
+		font-size: 14px;
+	}
 }
 @media (min-width: 1599px) {
-	.azbn-service-list ul li .desc {
+	html:not(.msie) .azbn-service-list ul li .desc {
 		display:none;
 	}
 }

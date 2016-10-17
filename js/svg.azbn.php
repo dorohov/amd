@@ -1,221 +1,6 @@
 
 <div class="azbn-infra-block" >
-
-<style>
-
-.azbn-infra-block {
-	margin:40px 0;
-}
-
-.clearboth {
-	clear:both;
-}
-
-.azbn-svg-cont {
-	max-width:991px;
-	max-height:684px;
-	width:100%;
-	margin:0 auto 0 0;
-}
-/*@media (max-width: 1599px) and (min-width: 1400px)*/
-@media (max-width: 1599px) {
-	.azbn-svg-cont {
-		max-width:65%;
-	}
-}
-@media (max-width: 991px) {
-	.azbn-svg-cont {
-		max-width:100%;
-		margin:0 auto;
-	}
-}
-
-.azbn-svg-cont svg#azbn-svg .theme-block .black-area {
-	opacity:0;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block .theme-block-btn {
-	opacity:0;
-	overflow:visible;
-	pointer-events: visible;
-	cursor:pointer;
-	transition:all 0.4s ease;
-}
-
-.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
-	//opacity:0;
-	pointer-events: none;
-	overflow:visible;
-	fill:#ffffff;
-	font-size:14px;
-	font-family: Calibri;
-	text-align: left;
-	color:#ffffff;
-	position:relative;
-	transform-origin:0 0;
-	transform:scale(0);
-	transition-delay:0s;
-	transition:all 0.4s ease;
-}
-@media (max-width: 1599px) {
-	.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont {
-		display:none;
-	}
-}
-
-
-.azbn-svg-cont svg#azbn-svg .theme-block .desc-line {
-	stroke: #82b9d4;
-	stroke-width: 2px;
-	transform-origin:0 0;
-	transform:scale(0);
-	transition-delay:0s;
-	transition:all 0.4s ease;
-}
-@media (max-width: 1599px) {
-	.azbn-svg-cont svg#azbn-svg .theme-block .desc-line {
-		display:none;
-	}
-}
-
-.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .cont {
-	background-color:rgba(0, 0, 0, 0.65);
-	padding: 20px 16px;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .color-stick {
-	content:'';
-	display:none;
-	position:fixed;
-	left:0;
-	top:0;
-	width:2px;
-	height:0px;
-	background-color:#82b9d4;
-	transition-delay:0.7s;
-	transition:all 0.4s ease;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .title {
-	font-size: 20px;
-	font-weight: 700;
-	text-transform:uppercase;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block .desc-cont .desc {
-	font-size: 18px;
-	line-height:1.25em;
-	margin-top:10px;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-line {
-	transform:scale(1);
-	//opacity:1;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont {
-	transform:scale(1);
-	//opacity:1;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont .color-stick {
-	/*height:175px;*/
-	min-height:175px;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .desc-cont .cont {
-	opacity:1;
-}
-
-.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .theme-block-btn {
-	opacity:1;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block .colored-border {
-	opacity:0;
-	pointer-events: none;
-	display:inline;
-	transition:all 0.4s ease;
-}
-.azbn-svg-cont svg#azbn-svg .theme-block[data-hovered="1"] .colored-border {
-	opacity:0.53;
-}
-
-.azbn-service-list {
-	float:right;
-	position:relative;
-	transition:all 0.4s ease;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-	.azbn-service-list {
-		min-height: 620px;
-	}
-}
-@media (max-width: 991px) {
-	.azbn-service-list {
-		float:inherit;
-	}
-}
-
-.azbn-service-list ul {
-	margin:0;
-	padding:0;
-	position:absolute;
-	right:0;
-	top:0;
-	transition:all 0.4s ease;
-}
-@media (max-width: 991px) {
-	.azbn-service-list ul {
-		position:relative;
-	}
-}
-
-
-.azbn-service-list ul li {
-	margin: 0 0 12px;
-	padding:0;
-	display:block;
-	text-align: right;
-}
-@media (max-width: 991px) {
-	.azbn-service-list ul li {
-		text-align: left;
-	}
-}
-
-
-.azbn-service-list ul li a {
-	font-family: Calibri;
-	color: #8cc7e2;
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: 0.7px;
-	line-height: 19px;
-	text-transform:uppercase;
-	display:inline-block;
-	white-space: nowrap;
-	padding: 2px 14px;
-	border-radius: 28px;
-	border:1px transparent solid;
-	transition:all 0.4s ease;
-}
-@media (max-width: 1599px) {
-	.azbn-service-list ul li a {
-		font-size: 12px;
-	}
-}
-
-.azbn-service-list ul li.active a {
-	color: #ffffff;
-	border:1px #ffffff solid;
-}
-
-.azbn-service-list ul li .desc {
-	font-size: 12px;
-	padding-top:15px;
-}
-@media (min-width: 1599px) {
-	.azbn-service-list ul li .desc {
-		display:none;
-	}
-}
-
-
-</style>
-
-
+ 
 <div class="azbn-service-list" >
 	<ul >
 		<li><a href="#link" data-area-id="1" >Система холодоснабжения</a></li>
@@ -274,7 +59,7 @@
 				
 			</g>
 			
-			<foreignObject class="desc-cont" x="700" y="600" width="650" >
+			<foreignObject class="desc-cont" x="700" y="600" width="650"  >
 				<body class="" xmlns="http://www.w3.org/1999/xhtml">
 					<div class="color-stick" style="top:inherit;bottom:0;" ></div>
 					<div class="cont" >
@@ -311,7 +96,7 @@
 				<image class="theme-block-btn " style="clip-path:url(#cp-2-2);" width="1507" height="1040" id="XMLID_16_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/0/bg-color.jpg"></image>
 			</g>
 			
-			<foreignObject class="desc-cont" x="800" y="300" width="700" >
+			<foreignObject class="desc-cont" x="800" y="300" width="700"  >
 				<body class="" xmlns="http://www.w3.org/1999/xhtml">
 					<div class="color-stick" ></div>
 					<div class="cont" >
@@ -334,6 +119,15 @@
 		<g id="g-3" data-area-id="3" data-title="Система_контроля_доступа_x2C__охранной_сигнализации_и_видеонаблюдения" class="theme-block" render-order="1" >
 			
 			<g class="colored-border" data-title="обводка" render-order="-1" >
+				<g ><image width="213" height="180" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/3/x_4.png" transform="matrix(1 0 0 1 697 542)" ></image>
+				</g>
+				<g ><image width="125" height="124" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/3/x_5.png" transform="matrix(1 0 0 1 714 407)" ></image>
+				</g>
+				<g ><image width="125" height="137" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/3/x_6.png" transform="matrix(1 0 0 1 567 228)" ></image>
+				</g>
+				<g ><image width="135" height="130" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/3/x_7.png" transform="matrix(1 0 0 1 169 391)" ></image>
+				</g>
+				<!--
 				<g id="XMLID_49_" class="st5">	<image  width="213" height="148" id="XMLID_551_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/3/11.png" transform="matrix(1 0 0 1 697 542)"></image>
 				</g>
 				<g id="XMLID_50_" class="st5">	<image  width="209" height="157" id="XMLID_361_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/3/12.png" transform="matrix(1 0 0 1 702 565)"></image>
@@ -386,6 +180,7 @@
 				</g>
 				<g id="XMLID_82_" class="st5">	<image  width="99" height="110" id="XMLID_271_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/3/36.png" transform="matrix(1 0 0 1 183 390)"></image>
 				</g>
+				-->
 			</g>
 			
 			<g class=" polygon-cont" render-order="1" >
@@ -412,7 +207,7 @@
 				<image class="theme-block-btn " style="clip-path:url(#cp-3-1);" width="1507" height="1040" id="XMLID_24_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/0/bg-color.jpg"></image>
 			</g>
 			
-			<foreignObject class="desc-cont" x="900" y="250" width="600" >
+			<foreignObject class="desc-cont" x="825" y="50" width="600"  >
 				<body class="" xmlns="http://www.w3.org/1999/xhtml">
 					<div class="color-stick" ></div>
 					<div class="cont" >
@@ -427,7 +222,7 @@
 			</foreignObject>
 			
 			<g >
-				<line class="desc-line" x1="800" y1="615" x2="1500" y2="615"></line>
+				<line class="desc-line" x1="825" y1="50" x2="825" y2="615"></line>
 			</g>
 			
 		</g>
@@ -435,6 +230,10 @@
 		<g id="g-4" data-area-id="4" data-title="Система_резервного_гарантированного_электроснабжения" class="theme-block" render-order="1" >
 			
 			<g class="colored-border" data-title="обводка" render-order="-1" >
+				<g ><image width="337" height="429" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/4/x_9.png" transform="matrix(1 0 0 1 45 175)" ></image>
+				</g>
+				
+				<!--
 				<g id="XMLID_84_" class="st5">	<image  width="227" height="288" id="XMLID_561_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/4/38.png" transform="matrix(1 0 0 1 155 170)"></image>
 				</g>
 				<g id="XMLID_85_" class="st5">	<image  width="206" height="159" id="XMLID_435_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/4/39.png" transform="matrix(1 0 0 1 167 343)"></image>
@@ -451,6 +250,7 @@
 				</g>
 				<g id="XMLID_92_" class="st5">	<image  width="207" height="148" id="XMLID_349_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/4/45.png" transform="matrix(1 0 0 1 47 175)"></image>
 				</g>
+				-->
 			</g>
 			
 			<g class=" polygon-cont" render-order="1" >
@@ -459,7 +259,7 @@
 				<image class="theme-block-btn " style="clip-path:url(#cp-4-1);" width="1507" height="1040" id="XMLID_24_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/0/bg-color.jpg"></image>
 			</g>
 			
-			<foreignObject class="desc-cont" x="500" y="300" width="700" >
+			<foreignObject class="desc-cont" x="500" y="300" width="700"  >
 				<body class="" xmlns="http://www.w3.org/1999/xhtml">
 					<div class="color-stick" ></div>
 					<div class="cont" >
@@ -481,6 +281,10 @@
 		<g id="g-5" data-area-id="5" data-title="Система_автоматизации_и_диспетчеризации" class="theme-block" render-order="1" >
 			
 			<g class="colored-border" data-title="обводка" render-order="-1" >
+				<g ><image width="319" height="318" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/5/x_11.png" transform="matrix(1 0 0 1 421 503)" ></image>
+				</g>
+				
+				<!--
 				<g id="XMLID_94_">	<image  width="100" height="152" id="XMLID_564_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/5/47.png" transform="matrix(1 0 0 1 438 573)"></image>
 				</g>
 				<g id="XMLID_95_">	<image  width="155" height="199" id="XMLID_557_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/5/48.png" transform="matrix(1 0 0 1 421 622)"></image>
@@ -555,6 +359,7 @@
 				</g>
 				<g id="XMLID_141_">	<image  width="99" height="104" id="XMLID_368_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/5/83.png" transform="matrix(1 0 0 1 590 543)"></image>
 				</g>
+				-->
 			</g>
 			
 			<g class=" polygon-cont" render-order="1" >
@@ -563,7 +368,7 @@
 				<image class="theme-block-btn " style="clip-path:url(#cp-5-1);" width="1507" height="1040" id="XMLID_4_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/0/bg-color.jpg"></image>
 			</g>
 			
-			<foreignObject class="desc-cont" x="585" y="150" width="700" >
+			<foreignObject class="desc-cont" x="585" y="150" width="700"  >
 				<body class="" xmlns="http://www.w3.org/1999/xhtml">
 					<div class="color-stick" ></div>
 					<div class="cont" >
@@ -585,6 +390,9 @@
 		<g id="g-6" data-area-id="6" data-title="Система_пожаротушения" class="theme-block" render-order="1" >
 			
 			<g class="colored-border" data-title="обводка" render-order="-1" >
+				<g ><image width="514" height="366" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/6/x_13.png" transform="matrix(1 0 0 1 181 235)" ></image>
+				</g>
+				<!--
 				<g id="XMLID_144_">	<image  width="164" height="194" id="XMLID_566_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/6/85.png" transform="matrix(1 0 0 1 189 404)"></image>
 				</g>
 				<g id="XMLID_145_">	<image  width="135" height="205" id="XMLID_563_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/6/86.png" transform="matrix(1 0 0 1 254 383)"></image>
@@ -655,6 +463,7 @@
 				</g>
 				<g id="XMLID_267_">	<image  width="117" height="114" id="XMLID_442_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/6/119.png" transform="matrix(1 0 0 1 181 401)"></image>
 				</g>
+				-->
 			</g>
 			
 			<g class=" polygon-cont" render-order="1" >
@@ -663,7 +472,7 @@
 				<image class="theme-block-btn " style="clip-path:url(#cp-6-1);" width="1507" height="1040" id="XMLID_4_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/0/bg-color.jpg"></image>
 			</g>
 			
-			<foreignObject class="desc-cont" x="290" y="50" width="700" >
+			<foreignObject class="desc-cont" x="290" y="50" width="700"  >
 				<body class="" xmlns="http://www.w3.org/1999/xhtml">
 					<div class="color-stick" ></div>
 					<div class="cont" >
@@ -749,7 +558,7 @@
 				<image class="theme-block-btn " style="clip-path:url(#cp-7-1);" width="1507" height="1040" id="XMLID_4_" xlink:href="<?=SITE_TEMPLATE_PATH;?>/img/svg-img/0/bg-color.jpg"></image>
 			</g>
 			
-			<foreignObject class="desc-cont" x="500" y="650" width="700" >
+			<foreignObject class="desc-cont" x="500" y="650" width="700"  >
 				<body class="" xmlns="http://www.w3.org/1999/xhtml">
 					<div class="color-stick" ></div>
 					<div class="cont" >
