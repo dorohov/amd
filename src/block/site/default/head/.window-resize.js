@@ -23,6 +23,9 @@ if (device.mobile() || device.tablet()) {
 }
 if (device.mobile()) {
 	$('.content-site.second').removeAttr("style");	
+	$('.services-dropdown').prependTo('.content-site .container');
+	$('.heading-site').prependTo('.content-site .container');
+	//services-dropdown
 
 } else {
 	$('.content-site.second').css("min-height", h_resize);
