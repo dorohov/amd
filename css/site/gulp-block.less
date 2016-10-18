@@ -3074,7 +3074,12 @@
 		}
 	}
 }
-.service-page-content{position: relative;}
+.service-page-content{
+	position: relative;
+	.director-text{
+		@media @media-screen{bottom: 90px}
+	}
+}
 ._sspc__row{
 	flex-direction: column; 
 }
@@ -3115,4 +3120,11 @@
 		font-size: 18px;
 		line-height: 26px;
 	}
+}
+._sspc__heading-site-block{
+	max-width: 930px;
+	@media @media-size-sm-p{max-width: 500px;}
+	@media @media-size-sm-l{max-width: 700px;}
+	@media @media-size-lg{max-width: 700px;}
+	@media @media-size-xl1{max-width: 800px;}
 }

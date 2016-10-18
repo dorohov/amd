@@ -173,6 +173,17 @@ h6{
 		}
 	}
 }
+.heading-site-block{
+	display: flex;
+	flex-wrap: wrap;
+	//justify-content: space-between;
+	align-items: center;
+	.heading-site{padding-right: 40px; margin-bottom: 0}
+	.services-dropdown-cols{width: 30%}
+	@media @media-device{margin-bottom: 20px;}
+	@media @media-screen{margin-bottom: 25px;}
+	@media @media-size-lg{margin-bottom: 20px;}
+}
 .heading-site{
 	//font-family: @calibri-bold;
 	font-family: @din;
@@ -301,7 +312,7 @@ ol{
 	}
 }
 .services-dropdown{
-	@media @media-size-xs{margin-bottom: 25px;}
+	margin-bottom: 30px;
 	&.open{
 		._btn{
 			color: @white;
