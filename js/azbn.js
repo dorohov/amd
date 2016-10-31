@@ -182,6 +182,47 @@ $(function(){
 		
 	});
 	
+	(function(){
+		
+		if($('html').hasClass('msie')) {
+			
+			$('.msie svg#azbn-svg .polygon-cont path, svg#azbn-svg .polygon-cont polygon').each(function(index){
+				
+				var block = $(this);
+				
+				var id = block.attr('id');
+				
+				block
+					.clone(true)
+					.addClass('cloned')
+					.attr('data-clone-id', '#' + id + '-kopro-ie')
+					.appendTo('svg#azbn-svg .kopro-ie')
+					.css({
+						'fill' : 'transparent',
+					})
+					.on('click', function(event){
+						event.preventDefault();
+						
+						block
+							.closest('.theme-block')
+								.trigger('azbn.setActive')
+						;
+						
+					})
+				;
+				
+			});
+			
+		} else {
+			
+			$('svg#azbn-svg .kopro-ie')
+				.empty()
+				.remove();
+			
+		}
+		
+	})();
+	
 	/*
 	/Новая SVG схема
 	*/

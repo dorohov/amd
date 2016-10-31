@@ -130,15 +130,16 @@
 	
 	.msie & {
 		pointer-events: none;
-		overflow:hidden;
 	}
 }
 
-.msie svg#azbn-svg .theme-block .polygon-cont polygon, .msie svg#azbn-svg .theme-block .polygon-cont clippath {
-	pointer-events: visible;
-	order:100;
+.azbn-svg-cont svg#azbn-svg .kopro-ie {
+	display:none;
+	
+	.msie & {
+		display:inline-block;
+	}
 }
-
 
 .msie .azbn-svg-cont svg#azbn-svg .theme-block line {
 	display:none;
