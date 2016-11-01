@@ -182,30 +182,64 @@ $(function(){
 		
 	});
 	
-	(function(){
+	$(function(){
 		
 		if($('html').hasClass('msie')) {
+			
+			if($('svg#azbn-svg .kopro-ie').length > 0) {
+				
+			} else {
+				
+				//<g class="kopro-ie" render-order="0" ></g>
+				
+				var kopro_ie = $('<g/>', {
+					'class' : 'kopro-ie',
+					'render-order' : '0',
+				})
+					.appendTo('svg#azbn-svg')
+				;
+				
+			}
 			
 			$('.msie svg#azbn-svg .polygon-cont path, svg#azbn-svg .polygon-cont polygon').each(function(index){
 				
 				var block = $(this);
+				var cont = block
+							.closest('.theme-block');
 				
 				var id = block.attr('id');
 				
 				block
 					.clone(true)
-					.addClass('cloned')
+					//.addClass('cloned')
 					.attr('data-clone-id', '#' + id + '-kopro-ie')
 					.appendTo('svg#azbn-svg .kopro-ie')
 					.css({
 						'fill' : 'transparent',
 					})
+					
+					/*
+					.on('mouseenter', function(event){
+						event.preventDefault();
+						
+						cont
+							.trigger('mouseenter')
+						;
+					})
+					.on('mouseleave', function(event){
+						event.preventDefault();
+						
+						cont
+							.trigger('mouseleave')
+						;
+					})
+					*/
+					
 					.on('click', function(event){
 						event.preventDefault();
 						
-						block
-							.closest('.theme-block')
-								.trigger('azbn.setActive')
+						cont
+							.trigger('azbn.setActive')
 						;
 						
 					})
@@ -221,7 +255,7 @@ $(function(){
 			
 		}
 		
-	})();
+	});
 	
 	/*
 	/Новая SVG схема
