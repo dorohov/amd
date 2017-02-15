@@ -102,6 +102,18 @@
 			justify-content: space-between;
 			align-items: center;
 		}
+		._fs__lang-bar{display: none;}
+
+		._fs__cols-app{
+			width: 50%; margin: 0;
+			img{
+				max-width: 120px;
+				@media @media-size-xs-l{max-width: 90px;}
+				@media @media-device{
+					margin: 0 auto;
+				}
+			}
+		}
 		@media @media-size-xs-p{
 			text-align: center;
 		}
@@ -112,7 +124,6 @@
 		}
 		@media @media-device{background: @b-footer-bg;}
 		@media @media-size-lg{padding: 20px 40px;}
-
 		&.services{
 			padding: 30px 50px;
 			z-index: 200;
@@ -166,7 +177,9 @@
 		padding-bottom: 20px;
 	}
 }
-._fs__navbar-row{}
+._fs__navbar-row{
+	@media @media-device{flex-wrap: wrap;}
+}
 ._fs__cols-info{
 	@media @media-size-xs{
 		width: 100%;
@@ -195,8 +208,35 @@
 }
 ._fs__cols-btn{
 	margin-top: 10px;
-	width: 17%;
-	@media @media-device{display: none;}
+	@media @media-device{
+		//display: none;
+		width: 100%;
+		.btn-site{display: none;}
+	}
+	@media @media-screen{
+		width: 17%;
+	}
+}
+._fs__row-app{
+	flex-wrap: wrap;
+}
+._fs__cols-app{
+	@media @media-size-xs{
+		width: 100%; margin-bottom: 20px;
+	}
+	@media @media-size-sm{
+		width: 33.333%; margin-bottom: 20px;
+		&.one{order: 1;}
+		&.two{order: 3;}
+		&.three{order: 2;}
+	}
+	@media @media-screen{width: 100%; margin-top: 20px }
+	img{
+		max-width: 170px;
+		@media @media-device{
+			margin: 0 auto;
+		}
+	}
 }
 ._fs__logotip{
 	margin-bottom: 40px;
@@ -207,6 +247,9 @@
 		text-align: center;
 		a{display: inline-block;}
 	}
+}
+._fs__right-cols{
+	@media @media-size-xs{width: 100%;}
 }
 .fs__icon{
 	margin-bottom: 5px;
@@ -273,9 +316,9 @@
 	@media @media-size-xs{width: 100%;}
 }
 ._fs__copyright-text{
-	@media @media-size-xs-p{margin-bottom: 5px;}
-	@media @media-size-xs-l{width: 60%; float: left;}
-	@media @media-size-xs-4-l{width: 40%; float: left;}
+	@media @media-size-xs{margin-bottom: 5px; text-align: center;}
+	//@media @media-size-xs-l{width: 60%; float: left;}
+	//@media @media-size-xs-4-l{width: 40%; float: left;}
 }
 ._fs__dorohovdesign{
 	@media @media-size-xs-p{width: 100%;}
