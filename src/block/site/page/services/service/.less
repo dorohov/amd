@@ -5,10 +5,15 @@
 		@media @media-screen{bottom: 90px}
 	}
 }
-._sspc__row{
+._sspc__row{	
+	@media @media-device{position: relative; flex-wrap: wrap;}
 	flex-direction: column; 
 }
 ._sspc__cols{
+	@media @media-device{width: 100%;}
+	&.director-block{
+		@media @media-size-sm{height: 220px;}
+	}
  	&._director{
  		._inner{
 			/*@media @media-size-xs-p{background-size: 90%;}
