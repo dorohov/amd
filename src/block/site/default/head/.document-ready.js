@@ -5,9 +5,9 @@ $('.navbar-nav a[href="'+url+'"]').parent().addClass('active');
 $('._fs__navbar a[href="'+url+'"]').parent().addClass('active'); 
 $('.tabs-site a[href="'+url+'"]').parent().addClass('active'); 
 $('.services-dropdown .dropdown-menu a[href="'+url+'"]').parent().addClass('active'); 
-if(url != "/"){
+/*if(url != "/"){
 	$('<li><a href="/">Главная</a></li>').prependTo($('.navbar-nav'));
-}
+}*/
 $('.text-block table').addClass('table table-bordered');
 $('._sppc__item').hover(
 	function(){
