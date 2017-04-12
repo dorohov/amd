@@ -1611,6 +1611,9 @@
 	@media @media-size-sm-l{max-width: 650px;}
 	@media @media-size-lg{max-width: 660px;}
 	@media @media-size-xl1{max-width: 670px;}
+	div, p, ul, ol{
+		margin-bottom: 15px;
+	}
 }
 ._apc__video{
 	@media @media-size-xs{
@@ -1626,6 +1629,10 @@
 		width: 630px;
 		height: 760px;
 		background: url('@{url-path-img}/about/bg-video.png') no-repeat top right;
+		&.lsv{
+			background: url('@{url-path-img}/about/bg-video-lsv.png') no-repeat top right;
+			background-size: cover;
+		}
 	}
 	@media @media-size-sm{
     	width: 270px;
@@ -1777,6 +1784,11 @@
 			content: @icon-star;
 		}
 	}
+}
+._apc__slider-header{
+	font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 .clients-page-content{
 	position: relative;
