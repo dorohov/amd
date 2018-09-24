@@ -1,5 +1,52 @@
+.bg-block__{
+	&card{
+		background-position: right bottom;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: -1;
+		&.is--consalting{
+			bottom: -50px;
+			right: 0;
+			//max-width: 465px;
+			//max-height: 830px;
+			width: 465px;
+			height: 830px;
+			//width: 26vw;
+			//height: 45vw;
+			@media @media-device{
+				display: none;
+			}
+			@media @media-size-md{
+				display: none;
+			}
+			@media @media-size-lg{
+				bottom: -30px;
+			}
+		}
+		&.is--service{
+			right: 0;
+			bottom: -50px;
+			//max-width: 465px;
+			//max-height: 830px;
+			width: 465px;
+			height: 830px;
+			//width: 26vw;
+			//height: 45vw;
+			@media @media-device{
+				display: none;
+			}
+			@media @media-size-md{
+				display: none;
+			}
+			@media @media-size-lg{
+				bottom: -30px;
+			}
+		}
+	}
+}
 .bg-service{
-	background-image: url('@{url-path-img}/bg/bg-service.png');
+	/*background-image: url('@{url-path-img}/bg/bg-service.png');
 	background-repeat: no-repeat;
 	background-position: 92% bottom;
 	margin-bottom: 0px;
@@ -24,22 +71,20 @@
 	}
 	@media @media-size-xxl{
 	    background-size: auto 750px;
-	}
+	}*/
 	.director-text{
 		@media @media-size-xl1{right: 25%; text-align: right;}
 	}
 	.director-block{
 		._inner{
 			@media @media-device{
-				background-image: url('@{url-path-img}/bg/bg-service.png');
-				background-repeat: no-repeat;
-				background-size: 190px auto;
+				background-image: url('@{url-path-img}/bg/bg-service-new.png');
 			}
 		}
 	}	
 }
 .bg-consulting{
-	background-image: url('@{url-path-img}/bg/bg-consulting.png');
+	/*background-image: url('@{url-path-img}/bg/bg-consulting.png');
 	background-repeat: no-repeat;
 	background-position: right 100%;
 	margin-bottom: 0px;
@@ -62,53 +107,34 @@
     	//background-size: auto 730px;
     	min-height: 700px!important;
 		//background-position: 95% bottom;
-	}
+	}*/
 	.director-block{
 		._inner{
-			@media @media-size-xs{
-				background-position: right bottom;
-				background-size: auto 100%;
-				padding-top: 180px;
-				width: 220px;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			@media @media-size-sm{
-				//background-size: 100% auto;
-				background-size: 260px auto;
-    			background-position: -20px 100%;
-    			//background-position: bottom right;
-			}
 			@media @media-device{
-				background-image: url('@{url-path-img}/bg/bg-consulting.png');
-				background-repeat: no-repeat;
-				//background-size: 190px auto;
+				background-image: url('@{url-path-img}/bg/bg-consulting-new.png');
 			}
 		}
-		@media @media-size-sm{width: 240px}
 	}
 }
 .director-block{
-	._inner{			
+	._inner{		
+		background-repeat: no-repeat; 
+		background-position: right bottom;
+		background-size: contain;	
+		position: relative;
+		width: 100%!important;
+		height: 100%!important;
 		@media @media-size-xs{
-			position: relative;
-			padding-top: 200px;
 			background-color: @blue;
-			background-repeat: no-repeat; 
-			background-position: center 10px;
+			height: 400px;
 			margin-bottom: 80px;
-			background-size: 150px auto;
-		}
-		@media @media-size-sm{
-			width: 100%;
-			height: 100%;
 		}
 		@media @media-screen{display: none;}
 	}
 	@media @media-size-sm{
 		position: absolute;
-		width: 220px;
-		height: 360px;
+		width: 220px!important;
+		height: 400px!important;
 		right: 20px;
 	}
 }
